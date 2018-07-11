@@ -5,7 +5,11 @@ gem 'rails', '3.2.16'
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
+<<<<<<< HEAD
 gem 'sqlite3'
+=======
+
+>>>>>>> Initial commit
 
 
 # Gems used only for assets and not required
@@ -22,6 +26,18 @@ end
 
 gem 'jquery-rails'
 
+<<<<<<< HEAD
+=======
+group :development, :test do
+	gem 'sqlite3'
+end
+
+group :production do
+	gem 'pg'
+	gem 'rails_12factor'
+end
+
+>>>>>>> Initial commit
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
 
