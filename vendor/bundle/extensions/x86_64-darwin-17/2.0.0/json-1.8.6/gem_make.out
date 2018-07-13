@@ -1,0 +1,14 @@
+current directory: /Users/pratheepk/blog_app/vendor/bundle/gems/json-1.8.6/ext/json
+/Users/pratheepk/.rvm/rubies/ruby-2.0.0-p648/bin/ruby -r ./siteconf20180713-34511-ds8op8.rb extconf.rb
+creating Makefile
+
+current directory: /Users/pratheepk/blog_app/vendor/bundle/gems/json-1.8.6/ext/json
+make "DESTDIR=" clean
+
+current directory: /Users/pratheepk/blog_app/vendor/bundle/gems/json-1.8.6/ext/json
+make "DESTDIR="
+make: Nothing to be done for `all'.
+
+current directory: /Users/pratheepk/blog_app/vendor/bundle/gems/json-1.8.6/ext/json
+make "DESTDIR=" install
+installing default libraries

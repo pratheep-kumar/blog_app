@@ -1,5 +1,5 @@
 BlogApp::Application.routes.draw do
-  root :to => 'articles#index'
+  root :to => 'articles#home'
   resources :articles
   # The priority is based upon order of creation:
   # first created -> highest priority.

@@ -1,12 +1,9 @@
 source 'https://rubygems.org'
 
-gem 'rails', '3.2.16'
+gem 'rails', '3.2.22.5'
 
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
-
-gem 'bootstrap-sass', '~> 3.3.7'
-
 
 gem 'strong_parameters'
 
