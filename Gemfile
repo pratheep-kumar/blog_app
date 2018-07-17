@@ -8,6 +8,7 @@ gem 'rails', '3.2.22.5'
 gem 'strong_parameters'
 
 gem 'test-unit'
+#gem 'bcrypt', '~> 3.1.7'
 
 # Gems used only for assets and not required
 # in production environments by default.
@@ -23,6 +24,10 @@ end
 
 gem 'jquery-rails'
 
+gem 'will_paginate', '3.0.7'
+
+gem 'bootstrap-will_paginate', '0.0.10'
+
 group :development, :test do
 	gem 'sqlite3'
 end
@@ -33,7 +38,7 @@ group :production do
 end
 
 # To use ActiveModel has_secure_password
-# gem 'bcrypt-ruby', '~> 3.0.0'
+ gem 'bcrypt-ruby', '~> 3.0.0'
 
 # To use Jbuilder templates for JSON
 # gem 'jbuilder'

@@ -1,0 +1,22 @@
+<table>
+  <tr>
+    <th> Title </th>
+    <th> Description </th>
+    <th> Created by </th>
+    <th> Created time </th>
+    <th> Last updated </th>
+  </tr>
+
+  <% obj.each do |article| %>
+  <tr>
+    <td> <%= article.title %> </td>
+    <td> <%= article.desription %> </td>
+    <td> <%= article.user.username %> </td>
+    <td> <%= time_ago_in_words(article.created_at)%></td>
+    <td> <%= time_ago_in_words(article.updated_at) %> </td>
+    <td> <%= link_to 'Edit', edit_article_path(article) %> </td>
+    <td> <%= link_to 'Show', article_path(article) %> </td>
+    <td> <%= link_to 'Delete', article_path(article), method: :delete, data: {confirm: "Are you surely wanna delete the article?"} %> </td>
+  </tr>
+  <% end %>
+</table>

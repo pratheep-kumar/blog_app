@@ -1,6 +1,13 @@
 BlogApp::Application.routes.draw do
   root :to => 'articles#home'
   resources :articles
+  resources :users, except: [:new]
+  resources :password_resets, only: [:new, :create, :edit, :update]
+
+  get 'signup', to:'users#new'
+  get 'login', to:'sessions#new'
+  delete 'logout', to:'sessions#destroy'
+  post 'login', to:'sessions#create'
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
